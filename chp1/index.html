@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <p>{{ message }}</p>
+    <input type="text" v-model="message" >
+    <ol>
+      <li v-for="list in lists">{{ list }}</li>
+    </ol>
+    <button @click="clickHandler" value="購入" name="購入">購入</button><br>
+    <p v-show="show">表示</p>
+    <button @click="show = !show">テスト</button>
+    <br>
+    <p v-if="condition">表示</p>
+    <p v-else>非表示</p>
+    <button @click="condition=!condition">表示/非表示</button>
+    <br>
+    <transition>
+      <p v-if="show2">Hello Vue.js</p>
+    </transition>
+    <button @click="show2=!show2">transition</button>
+
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.9/dist/vue.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
