@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <p ref="hello">Hello</p>
+    <p ref="timtim">KKKKKKK</p>
+    <button @click="handleClick">カウントアップ</button>
+    <button @click="show=!show">表示</button>
+    <span ref="count" v-if="show">0</span>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.9/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.js"></script>  <script src="./main.js"></script>
+</body>
+</html>
